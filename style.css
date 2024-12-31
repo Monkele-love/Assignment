@@ -1,0 +1,189 @@
+/* General Reset */
+•	{
+    Margin: 0;
+    Padding: 0;
+    Box-sizing: border-box;
+}
+
+Body {
+    Font-family: ‘Roboto’, Arial, sans-serif;
+    Color: #333;
+    Line-height: 1.6;
+    Margin: 0;
+    Background-color: #f8f9fa;
+}
+
+/* Header Section */
+Header {
+    Background: linear-gradient(90deg, #4e54c8, #8f94fb);
+    Color: #fff;
+    Padding: 1.5rem 0;
+    Text-align: center;
+    Position: sticky;
+    Top: 0;
+    z-index: 1000;
+}
+
+Header h1 {
+    Font-size: 2.5rem;
+    Margin-bottom: 0.5rem;
+    Font-weight: bold;
+}
+
+Header nav ul {
+    List-style: none;
+    Display: flex;
+    Justify-content: center;
+    Gap: 20px;
+    Margin-top: 0.5rem;
+}
+
+Header nav ul li {
+    Display: inline-block;
+}
+
+Header nav ul li a {
+    Text-decoration: none;
+    Color: #000000;
+    Font-weight: 500;
+    Padding: 8px 15px;
+    Border-radius: 5px;
+    Transition: background-color 0.3s;
+}
+
+Header nav ul li a:hover {
+    Background-color: #6a6ee8;
+}
+
+/* Section Styling */
+Section {
+    Max-width: 1200px;
+    Margin: 2rem auto;
+    Padding: 1.5rem;
+    Background: #000000;
+    Border-radius: 8px;
+    Box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+Section h2 {
+    Text-align: center;
+    Font-size: 2rem;
+    Margin-bottom: 1rem;
+    Color: #4e54c8;
+}
+
+Section p {
+    Font-size: 1rem;
+    Margin-bottom: 1rem;
+    Text-align: justify;
+    Line-height: 1.8;
+}
+
+/* Projects Section */
+Table {
+    Width: 100%;
+    Border-collapse: collapse;
+    Margin-top: 1.5rem;
+    Font-size: 0.9rem;
+}
+
+Table th, table td {
+    Border: 1px solid #ddd;
+    Text-align: left;
+    Padding: 10px;
+}
+
+Table th {
+    Background-color: #4e54c8;
+    Color: white;
+}
+
+Table tr:nth-child(even) {
+    Background-color: #f9f9f9;
+}
+
+/* Contact Section */
+Form {
+    Display: flex;
+    Flex-direction: column;
+    Gap: 1rem;
+}
+
+Form label {
+    Font-weight: bold;
+    Margin-bottom: 0.5rem;
+}
+
+Form input, form textarea, form button {
+    Font-size: 1rem;
+    Padding: 10px;
+    Border: 1px solid #ddd;
+    Border-radius: 5px;
+    Outline: none;
+}
+
+Form input:focus, form textarea:focus {
+    Border-color: #4e54c8;
+    Box-shadow: 0 0 5px rgba(78, 84, 200, 0.5);
+}
+
+Form button {
+    Background-color: #4e54c8;
+    Color: #fff;
+    Border: none;
+    Cursor: pointer;
+    Transition: background-color 0.3s;
+}
+
+Form button:hover {
+    Background-color: #6a6ee8;
+}
+
+/* Footer */
+Footer {
+    Text-align: center;
+    Padding: 1rem 0;
+    Background-color: #4e54c8;
+    Color: white;
+    Font-size: 0.9rem;
+    Margin-top: 2rem;
+    
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    Header h1 {
+        Font-size: 2rem;
+    }
+
+    Header nav ul {
+        Flex-direction: column;
+    }
+
+    Header nav ul li {
+        Margin: 10px 0;
+    }
+
+    Table {
+        Font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    Section {
+        Padding: 1rem;
+    }
+
+    Table {
+        Display: block;
+        Overflow-x: auto;
+    }
+
+    Table th, table td {
+        Font-size: 0.8rem;
+    }
+
+    Header h1 {
+        Font-size: 1.8rem;
+    }
+}
